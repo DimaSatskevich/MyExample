@@ -1,0 +1,408 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1FAEFFF4-C5C6-44DE-A39A-46BF039D9A6A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Hockey</RootNamespace>
+    <AssemblyName>Hockey</AssemblyName>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormWithCoachesForUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormWithCoachesForUser.Designer.cs">
+      <DependentUpon>FormWithCoachesForUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormWithJudgeForUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormWithJudgeForUser.Designer.cs">
+      <DependentUpon>FormWithJudgeForUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormWithPlayersForUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormWithPlayersForUser.Designer.cs">
+      <DependentUpon>FormWithPlayersForUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormWithScheduleForUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormWithScheduleForUser.Designer.cs">
+      <DependentUpon>FormWithScheduleForUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormWithStadiumForUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormWithStadiumForUser.Designer.cs">
+      <DependentUpon>FormWithStadiumForUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormWithTeamForUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormWithTeamForUser.Designer.cs">
+      <DependentUpon>FormWithTeamForUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormWithTournamentForUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormWithTournamentForUser.Designer.cs">
+      <DependentUpon>FormWithTournamentForUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserForm.Designer.cs">
+      <DependentUpon>UserForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAddCoach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddCoach.Designer.cs">
+      <DependentUpon>FormAddCoach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAddJudge.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddJudge.Designer.cs">
+      <DependentUpon>FormAddJudge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAddPlay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddPlay.Designer.cs">
+      <DependentUpon>FormAddPlay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAddPlayer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddPlayer.Designer.cs">
+      <DependentUpon>FormAddPlayer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAddStadium.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddStadium.Designer.cs">
+      <DependentUpon>FormAddStadium.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminForm.Designer.cs">
+      <DependentUpon>AdminForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Enter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Enter.Designer.cs">
+      <DependentUpon>Enter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAddTeam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddTeam.Designer.cs">
+      <DependentUpon>FormAddTeam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAddTournament.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddTournament.Designer.cs">
+      <DependentUpon>FormAddTournament.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAddUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddUser.Designer.cs">
+      <DependentUpon>FormAddUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEditCoach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEditCoach.Designer.cs">
+      <DependentUpon>FormEditCoach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEditJudge.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEditJudge.Designer.cs">
+      <DependentUpon>FormEditJudge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEditPlay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEditPlay.Designer.cs">
+      <DependentUpon>FormEditPlay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEditPlayer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEditPlayer.Designer.cs">
+      <DependentUpon>FormEditPlayer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEditStadium.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEditStadium.Designer.cs">
+      <DependentUpon>FormEditStadium.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEditTeam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEditTeam.Designer.cs">
+      <DependentUpon>FormEditTeam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEditTournament.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEditTournament.Designer.cs">
+      <DependentUpon>FormEditTournament.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormWithCoachesForAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormWithCoachesForAdmin.Designer.cs">
+      <DependentUpon>FormWithCoachesForAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormWithJudgeForAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormWithJudgeForAdmin.Designer.cs">
+      <DependentUpon>FormWithJudgeForAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormWithPlayersForAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormWithPlayersForAdmin.Designer.cs">
+      <DependentUpon>FormWithPlayersForAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormWithScheduleForAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormWithScheduleForAdmin.Designer.cs">
+      <DependentUpon>FormWithScheduleForAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormWithStadiumForAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormWithStadiumForAdmin.Designer.cs">
+      <DependentUpon>FormWithStadiumForAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormWithTeamForAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormWithTeamForAdmin.Designer.cs">
+      <DependentUpon>FormWithTeamForAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormWithTournamentForAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormWithTournamentForAdmin.Designer.cs">
+      <DependentUpon>FormWithTournamentForAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="FormWithUsersForAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormWithUsersForAdmin.Designer.cs">
+      <DependentUpon>FormWithUsersForAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkWithBD.cs" />
+    <Compile Include="WorkWithMD5.cs" />
+    <Compile Include="WorkWithMessage.cs" />
+    <EmbeddedResource Include="FormAddCoach.resx">
+      <DependentUpon>FormAddCoach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAddJudge.resx">
+      <DependentUpon>FormAddJudge.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAddPlay.resx">
+      <DependentUpon>FormAddPlay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAddPlayer.resx">
+      <DependentUpon>FormAddPlayer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAddStadium.resx">
+      <DependentUpon>FormAddStadium.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminForm.resx">
+      <DependentUpon>AdminForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Enter.resx">
+      <DependentUpon>Enter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAddTeam.resx">
+      <DependentUpon>FormAddTeam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAddTournament.resx">
+      <DependentUpon>FormAddTournament.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAddUser.resx">
+      <DependentUpon>FormAddUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEditCoach.resx">
+      <DependentUpon>FormEditCoach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEditJudge.resx">
+      <DependentUpon>FormEditJudge.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEditPlay.resx">
+      <DependentUpon>FormEditPlay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEditPlayer.resx">
+      <DependentUpon>FormEditPlayer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEditStadium.resx">
+      <DependentUpon>FormEditStadium.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEditTeam.resx">
+      <DependentUpon>FormEditTeam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEditTournament.resx">
+      <DependentUpon>FormEditTournament.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormWithCoachesForUser.resx">
+      <DependentUpon>FormWithCoachesForUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormWithCoachesForAdmin.resx">
+      <DependentUpon>FormWithCoachesForAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormWithJudgeForUser.resx">
+      <DependentUpon>FormWithJudgeForUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormWithJudgeForAdmin.resx">
+      <DependentUpon>FormWithJudgeForAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormWithPlayersForUser.resx">
+      <DependentUpon>FormWithPlayersForUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormWithPlayersForAdmin.resx">
+      <DependentUpon>FormWithPlayersForAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormWithScheduleForUser.resx">
+      <DependentUpon>FormWithScheduleForUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormWithScheduleForAdmin.resx">
+      <DependentUpon>FormWithScheduleForAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormWithStadiumForUser.resx">
+      <DependentUpon>FormWithStadiumForUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormWithStadiumForAdmin.resx">
+      <DependentUpon>FormWithStadiumForAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormWithTeamForUser.resx">
+      <DependentUpon>FormWithTeamForUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormWithTeamForAdmin.resx">
+      <DependentUpon>FormWithTeamForAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormWithTournamentForUser.resx">
+      <DependentUpon>FormWithTournamentForUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormWithTournamentForAdmin.resx">
+      <DependentUpon>FormWithTournamentForAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="FormWithUsersForAdmin.resx">
+      <DependentUpon>FormWithUsersForAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForm.resx">
+      <DependentUpon>UserForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.1 %28x86 и x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\BackForPlayOff.jpg" />
+    <None Include="bin\Debug\BackForPlayOff.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
